@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>280</y>
+      <w>420</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>elC::LcQueuer
+--
+-queue: BlockingQueue&lt;LcMessage&gt;
+-LOGGER: Logger
+--
++LcQueuer(BlockingQueue&lt;LcMessage&gt; q, Logger logger): ctor
++queueAdd(LcSolarReading rd): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>60</y>
+      <w>280</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>elC::LoggerController
+--
+-immersionOverrideState = false: boolean
+--
++LoggerController(): ctor
++main(String args[]): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>280</y>
+      <w>490</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>elC::LcAdcReader
+--
+--
++readAdc(LcIoPins iop, LcReading rd, LcParams lcp, Logger LOGGER): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

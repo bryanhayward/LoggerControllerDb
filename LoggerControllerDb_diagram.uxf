@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>330</y>
+      <w>490</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>elC::LcQueueParams
+--
+-LOGGER = null: Logger
+-qParasNode = null: Node
+-pLcp: LcParams
++queueType = "": String
++queueMaxLen = 0: int
++dwellSuccess = 0L: long
++dwellFailure = 0L: long
++retries = 0: int
+--
++LcQueueParams(String qType, LcParams passedLcp, Logger logger): ctor
++extractQparas(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>160</y>
+      <w>420</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>elC::LcQueuer
+--
+-queue: BlockingQueue&lt;LcMessage&gt;
+-LOGGER: Logger
+--
++LcQueuer(BlockingQueue&lt;LcMessage&gt; q, Logger logger): ctor
++queueAdd(LcSolarReading rd): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>60</y>
+      <w>280</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>elC::LoggerController
+--
+-immersionOverrideState = false: boolean
+--
++LoggerController(): ctor
++main(String args[]): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>40</y>
+      <w>490</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>elC::LcAdcReader
+--
+--
++readAdc(LcIoPins iop, LcReading rd, LcParams lcp, Logger LOGGER): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>70</y>
+      <w>170</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>120</y>
+      <w>170</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>150.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>270</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

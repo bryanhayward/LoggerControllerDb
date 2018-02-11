@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>380</w>
+      <h>1260</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+elC::LcReading
+--
+--
++getDate(): String
++getFlowRateGPS(int nDp): double
++getHwcIn(int nDp): double
++getHwcLower(int nDp): double
++getHwcOut(int nDp): double
++getHwcUpper(int nDp): double
++getPower(int nDp): double
++getPsun(int nDp): double
++getSbypassOn(): String
++getSdataQsize(): String
++getSdispQsize(): String
++getSfileQsize(): String
++getSflowRateGPS(int nDp): String
++getShwcIn(int nDp): String
++getShwcLower(int nDp): String
++getShwcOut(int nDp): String
++getShwcUpper(int nDp): String
++getSimmersionDemand(): String
++getSimmersionOverride(): String
++getSimmersionSupply(): String
++getSpower(int nDp): String
++getSpSun(int nDp): String
++getSpumpOn(): String
++getStIn(int nDp): String
++getStPanel(int nDp): String
++getTime(): String
++getTin(int nDp): double
++getTpanel(int nDp): double
+~toCSV(): String
+~getBypassOn(): boolean
+~getDataQsize(): int
+~getDispQsize(): int
+~getDtm(): String
+~getFileQsize(): int
+~getFlowRateGPS(): double
+~getHwcIn(): double
+~getHwcLower(): double
+~getHwcOut(): double
+~getHwcUpper(): double
+~getImmersionDemand(): boolean
+~getImmersionOverride(): boolean
+~getImmersionSupply(): boolean
+~getPower(): double
+~getPsun(): double
+~getPumpOn(): boolean
+~getTimeLapse(): String
+~getTin(): double
+~getTpanel(): double
+~mkNdp(double mdpd, int nDp): double
+~mkNdp(String mdp, int nDp): String
+~setBypassOn(boolean bypassOn): void
+~setDataQsize(int dataQsize): void
+~setDispQsize(int dispQsize): void
+~setDtm(String dTm): void
+~setFileQsize(int fileQsize): void
+~setFlowRateGPS(double flowRateGPS): void
+~setHwcIn(double hwcIn): void
+~setHwcLower(double hwcLower): void
+~setHwcOut(double hwcOut): void
+~setHwcUpper(double hwcUpper): void
+~setImmersionDemand(boolean immersionDemand): void
+~setImmersionOverride(boolean immersionOverride): void
+~setImmersionSupply(boolean pImmersionSupply): void
+~setPower(double power): void
+~setPsun(double pSun): void
+~setPumpOn(boolean pumpOn): void
+~setTimeLapse(String timeLapse): void
+~setTin(double tIn): void
+~setTpanel(double tPanel): void
+~clone(): LcReading
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>10</y>
+      <w>380</w>
+      <h>1090</h>
+    </coordinates>
+    <panel_attributes>elC::LcSolarReading
+--
+-bypassOn = false: boolean
+-dataQsize = 0: int
+-dispQsize = 0: int
+-dTm = "": String
+-fileQsize = 0: int
+-flowRateGPS = 0.0: Double
+-hwcIn = 0.0: Double
+-hwcLower = 0.0: Double
+-hwcOut = 0.0: Double
+-hwcUpper = 0.0: Double
+-immersionDemand = false: boolean
+-immersionOverride = false: boolean
+-immersionSupply = false: boolean
+-power = 0.0: Double
+-pSun = 0.0: Double
+-pumpOn = false: boolean
+-timeLapse = "": String
+-tIn = 0.0: Double
+-tPanel = 0.0: Double
+--
++LcSolarReading(): ctor
++clone(): LcSolarReading
++getBypassOn(): boolean
++getDataQsize(): int
++getDispQsize(): int
++getDtm(): String
++getFileQsize(): int
++getFlowRateGPS(): double
++getHwcIn(): double
++getHwcLower(): double
++getHwcOut(): double
++getHwcUpper(): double
++getImmersionDemand(): boolean
++getImmersionOverride(): boolean
++getImmersionSupply(): boolean
++getPower(): double
++getPsun(): double
++getPumpOn(): boolean
++getTimeLapse(): String
++getTin(): double
++getTpanel(): double
++setBypassOn(boolean bypassOn): void
++setDataQsize(int dataQsize): void
++setDispQsize(int dispQsize): void
++setDtm(String dTm): void
++setFileQsize(int fileQsize): void
++setFlowRateGPS(double flowRateGPS): void
++setHwcIn(double hwcIn): void
++setHwcLower(double hwcLower): void
++setHwcOut(double hwcOut): void
++setHwcUpper(double hwcUpper): void
++setImmersionDemand(boolean immersionDemand): void
++setImmersionOverride(boolean immersionOverride): void
++setImmersionSupply(boolean pImmersionSupply): void
++setPower(double power): void
++setPsun(double pSun): void
++setPumpOn(boolean pumpOn): void
++setTimeLapse(String timeLapse): void
++setTin(double tIn): void
++setTpanel(double tPanel): void
++toCSV(): String
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

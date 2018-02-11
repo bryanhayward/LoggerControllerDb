@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="lib/pi4j-gpio-extension-javadoc">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="lib/pi4j-javadoc"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="lib/mysql-connector-java-5.1.44-bin.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Bry/eclipse/workspace/LoggerControllerDb/lib/pi4j-core.jar" sourcepath="lib/pi4j-core-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/Bry/eclipse/workspace/LoggerControllerDb/lib/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Bry/eclipse/workspace/LoggerControllerDb/lib/pi4j-device.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/Bry/eclipse/workspace/LoggerControllerDb/lib/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Bry/eclipse/workspace/LoggerControllerDb/lib/pi4j-example.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/Bry/eclipse/workspace/LoggerControllerDb/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Bry/eclipse/workspace/LoggerControllerDb/lib/pi4j-gpio-extension.jar" sourcepath="lib/pi4j-gpio-extension-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/Bry/eclipse/workspace/LoggerControllerDb/lib/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Bry/eclipse/workspace/LoggerControllerDb/lib/pi4j-service.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/Bry/eclipse/workspace/LoggerControllerDb/lib/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

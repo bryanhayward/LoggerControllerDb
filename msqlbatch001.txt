@@ -1,0 +1,3 @@
+use Readings;
+show tables;
+SELECT VERSION(); SELECT NOW(); select * from reading;

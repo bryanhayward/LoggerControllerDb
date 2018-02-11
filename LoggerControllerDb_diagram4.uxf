@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>230</y>
+      <w>860</w>
+      <h>500</h>
+    </coordinates>
+    <panel_attributes>elC::LcHndlr
+--
+#client: Socket
+#clientNo: int
+#lcp: LcParams
+#lhp: LcHndlr
+#LOGGER: Logger
+--
++LcHndlr(): ctor
++LcHndlr(Socket iPclient, int iPclientNo, LcParams iPlcp, Logger logger): ctor
++run(): void
+-readResponse(): void
+#constructResponseHeader(int responseCode, StringBuilder sb): void
+-getTimeStamp(): String
+-mkCSV(LcReading rd): String
+-mkPowerCSV(LcReading rd): String
+#mkPageStart(String rec): String
+#mkPageEnd(String rec): String
+#getLev(int lev, String reqdFile): String
+#getiLev(int lev, String reqdFile): int
+#getNlev(String reqdFile): int
+#isDtm(String str): boolean
+#isDigits(String str): boolean
+-nonAscii(String str): boolean
+#lcWriteMap(Map&lt;String, LcSolarReading&gt; lcRdMap, int expectedNrecs, String direction, String type, BufferedWriter response): WritRes
+#doPage(BufferedWriter response, String reqdFile): boolean
+#doPage(BufferedWriter response): boolean
+#mkPageBody(int pageNo, LcReading rd): String
+#mkPowerPageBody(int pageNo, LcReading rd): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>0</y>
+      <w>380</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>elC::LcSvr
+--
+-LOGGER: Logger
+-serverSocket: ServerSocket
+-port: int
+-lcp: LcParams
+--
++LcSvr(int port, LcParams passedLcp, Logger logger): ctor
++run(): void
+-getTimeStamp(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>780</y>
+      <w>570</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>elC::LcHndlrResultPage
+--
+--
++LcHndlrResultPage(Socket iPclient, int iPClientNo, LcParams iPlcp, Logger logger): ctor
+#doPage(BufferedWriter response, String reqdFile): boolean
+#mkPageBody(int pageNo, LcReading rd): String
+#mkPowerPageBody(int pageNo, LcReading rd): String
+-chkParas(String paras): boolean
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>890</y>
+      <w>570</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>elC::LcHndlrIndexPage
+--
+--
++LcHndlrIndexPage(Socket iPclient, int iPClientNo, LcParams iPlcp, Logger logger): ctor
+#mkUsage(): String
+#doPage(BufferedWriter response): boolean
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>780</y>
+      <w>590</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>elC::LcHndlrNotFoundPage
+--
+--
++LcHndlrNotFoundPage(Socket iPclient, int iPClientNo, LcParams iPlcp, Logger logger): ctor
+#doPage(BufferedWriter response): boolean
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>170</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>720</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>880</x>
+      <y>720</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>720</y>
+      <w>30</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
