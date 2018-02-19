@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LoggerControllerCfg>
+  <msgLev>0</msgLev>
+  <dbg></dbg>
+  <offSet>0.0</offSet>
+  <hysPosPump>0.5</hysPosPump>
+  <hysNegPump>0.5</hysNegPump>
+  <hysPosByps>0.5</hysPosByps>
+  <hysNegByps>0.5</hysNegByps>
+  <logPeriod>30</logPeriod>
+  <portNumber>80</portNumber>
+  <showDisp>1</showDisp>
+  <saveFile>1</saveFile>
+  <saveDb>1</saveDb>
+  <remainConn>1</remainConn>
+  <host>192.168.2.5</host>
+  <userName>root</userName>
+  <pwd>Liberty</pwd>
+  <Qpara>
+    <queueType>SaveFile</queueType>
+    <queueMaxLen>4096</queueMaxLen>
+    <dwellSucess>0</dwellSucess>
+    <dwellFail>0</dwellFail>
+    <retries>0</retries>
+  </Qpara>
+  <Qpara>
+    <queueType>SaveData</queueType>
+    <queueMaxLen>4096</queueMaxLen>
+    <dwellSucess>0</dwellSucess>
+    <dwellFail>10000</dwellFail>
+    <retries>1000000</retries>
+  </Qpara>
+  <Qpara>
+    <queueType>Display</queueType>
+    <queueMaxLen>4096</queueMaxLen>
+    <dwellSuccess>0</dwellSuccess>
+    <dwellFailure>0</dwellFailure>
+    <retries>0</retries>
+  </Qpara>
+</LoggerControllerCfg>
